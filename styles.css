@@ -1,0 +1,271 @@
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Grayish-Blue: hsl(246, 25%, 77%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: var(--Red);
+    background-image: url(images/bg-intro-desktop.png);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 0 35rem;
+    
+}
+
+
+
+/* Left Column */
+
+.col-1 {
+flex: 1;
+text-align: center;
+font-size: 1.8rem;
+text-align: left;
+display: inline-block;
+
+}
+
+.col-2 {
+    flex: 1;
+    text-align: left;
+    }
+
+.col-1-caption {
+    color: #fff;
+    line-height: 4rem;
+    padding-bottom: 2rem;
+}
+
+.col-1-desc {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+}   
+
+
+/* Right Column */
+
+.input-box {
+    width: 35rem;
+    height: 35rem;
+    background-color: #fff;
+    border-radius: 3%;
+    
+}
+
+
+input {
+    display: block;
+    padding: 1.4rem 0;
+    margin: 0 auto; 
+    border-radius: 7px;
+    text-indent: 2rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border: solid 1px var(--Grayish-Blue);
+}
+
+.input-group {
+    padding: 3rem 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.colored-placeholder::-webkit-input-placeholder {
+color: red;
+}
+
+#name {
+
+margin-bottom: 1.1rem;
+}
+
+#surname {
+    margin-bottom: 1.1rem; 
+}
+
+
+#email {
+    margin-bottom: 1.1rem;  
+}
+
+
+#password {
+    margin-bottom: 1.1rem;
+}
+
+.claim-btn {
+    width: 30.5rem;
+    height: 4rem;
+    border-radius: 7px;
+    border-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background-color: var(--Green);
+    color: #fff;
+    box-shadow: 3px 2px 2px var(--Grayish-Blue);
+}
+
+.claim-btn:hover {
+background-color: hsl(154, 68%, 54%);
+transition: all 0.2s;
+
+}
+
+.try-btn {
+    width: 35rem;
+    height: 4rem;
+    border-radius: 7px;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    background-color: var(--Blue);
+    color: #fff;
+    margin-bottom: 2rem;
+    box-shadow: 0px 10px 10px rgba(48, 48, 48, 0.5);
+    
+}
+
+.try-btn:hover {
+    background-color: hsl(248, 50%, 62%);
+    transition: all 0.2s;
+}
+
+.terms-info {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    
+}
+
+.terms-span {
+    color: var(--Red);
+    cursor: pointer;
+}
+
+.try-day-span {
+font-weight: 700;
+}
+
+/* Mobile Design */
+
+@media screen and (max-width: 1920px) and (min-width: 701px) {
+   .col-1 {
+    margin-right: 2rem;
+   }
+
+  
+
+}
+
+
+@media screen and  (max-width: 700px){
+    body {
+        font-size: 12px;
+    }
+    
+    main {
+        display: flex;
+        display: inline-block;
+        margin-top: 3rem;
+        flex-direction: column;
+        
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 100vh;
+        padding: 0 3rem;
+        width: 100%;
+
+    }
+
+    .col-1 {
+        flex: none;
+        text-align: center;
+        
+        }
+        
+        .col-2 {
+            flex: none;
+            text-align: center;
+            }
+
+
+        .col-1-desc {
+            padding-bottom: 5rem;
+            
+        } 
+        
+        .try-btn{
+            height: 6rem;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .input-box {
+            display: inline-block;
+            width: 100%;
+        }
+
+        #name {
+
+            display: inline-block;
+            width: 100%;
+            }
+            
+            #surname {
+                display: inline-block;
+                width: 100%;
+            }
+            
+            
+            #email {
+                display: inline-block;
+                width: 100%;  
+            }
+            
+            
+            #password {
+                display: inline-block;
+                width: 100%;
+            }
+
+            .claim-btn {
+                display: inline-block;
+                width: 100%;
+            }
+}
+
+
+
